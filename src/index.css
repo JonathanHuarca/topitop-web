@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-topitop: #C8102E;
+  --color-topitop-dark: #A50C24;
+  --color-topitop-soft: #FDF2F4;
+  --color-ink: #141923;
+  --color-ink-muted: #525C6E;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Soft studio image blend for white-background garment flat-lays */
+.garment-blend {
+  mix-blend-mode: multiply;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeSlideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 16px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+.animate-toast {
+  animation: toastIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

@@ -10,7 +10,10 @@ interface ProductQrCodeProps {
 
 export function buildProductQrUrl(slug: string): string {
   if (typeof window !== 'undefined' && window.location?.origin) {
-    return `${window.location.origin}/#/producto/${slug}?source=qr`;
+    const path = window.location.pathname.endsWith('/')
+      ? window.location.pathname
+      : `${window.location.pathname}/`;
+    return `${window.location.origin}${path}#/producto/${slug}?source=qr`;
   }
   return `https://www.topitop.pe/#/producto/${slug}?source=qr`;
 }

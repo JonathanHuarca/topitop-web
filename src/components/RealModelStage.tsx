@@ -12,10 +12,10 @@ const CATEGORY_LABEL: Record<CategoryId, string> = {
 };
 
 const CATEGORY_AVATAR: Record<CategoryId, string> = {
-  mujer: '/images/hero-model-blusa.jpg',
-  nina: '/images/models/nina-oscura-afro.jpg',
-  hombre: '/images/model-hombre-look.jpg',
-  nino: '/images/model-ninos-look.jpg',
+  mujer: 'images/hero-model-blusa.jpg',
+  nina: 'images/models/nina-oscura-afro.jpg',
+  hombre: 'images/model-hombre-look.jpg',
+  nino: 'images/model-ninos-look.jpg',
 };
 
 /**
@@ -32,13 +32,13 @@ export function getExactPhotographedLook(
 
   if (category === 'mujer' && topProductId === 'blusa-manga-abullonada') {
     if (bottomProductId === 'pantalon-wide-leg') {
-      return '/images/model-look-universidad.jpg';
+      return 'images/model-look-universidad.jpg';
     }
     if (bottomProductId === 'pantalon-sastre-negro') {
-      return '/images/model-look-trabajo.jpg';
+      return 'images/model-look-trabajo.jpg';
     }
     if (bottomProductId === 'jean-straight-celeste') {
-      return '/images/model-look-salida.jpg';
+      return 'images/model-look-salida.jpg';
     }
   }
 
@@ -47,7 +47,7 @@ export function getExactPhotographedLook(
     topProductId === 'camisa-casual-algodon' &&
     bottomProductId === 'pantalon-chino-hombre'
   ) {
-    return '/images/model-hombre-look.jpg';
+    return 'images/model-hombre-look.jpg';
   }
 
   if (
@@ -55,7 +55,7 @@ export function getExactPhotographedLook(
     topProductId === 'polo-rayas-ninos' &&
     bottomProductId === 'short-chino-nino'
   ) {
-    return '/images/model-nino-full.jpg';
+    return 'images/model-nino-full.jpg';
   }
 
   return null;

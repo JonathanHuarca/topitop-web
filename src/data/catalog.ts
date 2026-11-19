@@ -111,12 +111,12 @@ export const PRODUCTS: Product[] = [
     description:
       'Blusa ligera de escote cuadrado con cuerpo elástico smocked y mangas abullonadas suaves. Confeccionada en algodón peruano respirable.',
     images: [
-      '/images/hero-model-blusa.jpg',
-      '/images/garment-blusa-celeste.jpg',
-      '/images/model-look-universidad.jpg',
+      'images/hero-model-blusa.jpg',
+      'images/garment-blusa-celeste.jpg',
+      'images/model-look-universidad.jpg',
     ],
-    flatLayImage: '/images/garment-blusa-celeste.jpg',
-    cutoutImage: '/images/cutouts/blusa-celeste.png',
+    flatLayImage: 'images/garment-blusa-celeste.jpg',
+    cutoutImage: 'images/cutouts/blusa-celeste.png',
     colors: [
       { id: 'celeste', name: 'Celeste', hex: '#88AED8' },
       { id: 'crema', name: 'Crema', hex: '#EFE5D6', border: '#D5C9B8' },
@@ -153,9 +153,9 @@ export const PRODUCTS: Product[] = [
     price: 94.9,
     description:
       'Camisa atemporal en mezcla fresca de lino y algodón peruano. Ideal para la oficina, reuniones o un look casual chic con jeans.',
-    images: ['/images/garments/mujer-camisa-lino.jpg'],
-    flatLayImage: '/images/garments/mujer-camisa-lino.jpg',
-    cutoutImage: '/images/cutouts/mujer-camisa-lino.png',
+    images: ['images/garments/mujer-camisa-lino.jpg'],
+    flatLayImage: 'images/garments/mujer-camisa-lino.jpg',
+    cutoutImage: 'images/cutouts/mujer-camisa-lino.png',
     colors: [
       { id: 'blanco', name: 'Blanco óptico', hex: '#F8F9FA', border: '#D4D7DD' },
       { id: 'celeste', name: 'Celeste claro', hex: '#B4CCE4' },
@@ -192,9 +192,9 @@ export const PRODUCTS: Product[] = [
     price: 129.9,
     description:
       'Vestido midi de silueta favorecedora con lazo en cintura y caída amplia en A. Fresco y elegante para el trabajo o una salida.',
-    images: ['/images/garments/mujer-vestido-midi.jpg'],
-    flatLayImage: '/images/garments/mujer-vestido-midi.jpg',
-    cutoutImage: '/images/cutouts/mujer-vestido-midi.png',
+    images: ['images/garments/mujer-vestido-midi.jpg'],
+    flatLayImage: 'images/garments/mujer-vestido-midi.jpg',
+    cutoutImage: 'images/cutouts/mujer-vestido-midi.png',
     colors: [
       { id: 'terracota', name: 'Terracota', hex: '#A54832' },
       { id: 'marino', name: 'Azul marino', hex: '#283A56' },
@@ -230,9 +230,9 @@ export const PRODUCTS: Product[] = [
     price: 99.9,
     description:
       'Pantalón de tiro alto en mezcla fresca de algodón peruano. Caída limpia y cómoda para la universidad o la oficina.',
-    images: ['/images/garment-chino-hombre.jpg', '/images/model-look-universidad.jpg'],
-    flatLayImage: '/images/garment-chino-hombre.jpg',
-    cutoutImage: '/images/cutouts/chino-hombre.png',
+    images: ['images/garment-chino-hombre.jpg', 'images/model-look-universidad.jpg'],
+    flatLayImage: 'images/garment-chino-hombre.jpg',
+    cutoutImage: 'images/cutouts/chino-hombre.png',
     colors: [
       { id: 'beige', name: 'Beige arena', hex: '#DDD3C4', border: '#C6BAA9' },
       { id: 'negro', name: 'Negro', hex: '#1E2128' },
@@ -269,9 +269,9 @@ export const PRODUCTS: Product[] = [
     price: 109.9,
     description:
       'Pantalón sastre con pinzas delanteras y caída elegante. Ideal para elevar looks de oficina o eventos.',
-    images: ['/images/garment-pantalon-negro.jpg', '/images/model-look-trabajo.jpg'],
-    flatLayImage: '/images/garment-pantalon-negro.jpg',
-    cutoutImage: '/images/cutouts/pantalon-negro.png',
+    images: ['images/garment-pantalon-negro.jpg', 'images/model-look-trabajo.jpg'],
+    flatLayImage: 'images/garment-pantalon-negro.jpg',
+    cutoutImage: 'images/cutouts/pantalon-negro.png',
     colors: [
       { id: 'negro', name: 'Negro', hex: '#1B1D22' },
       { id: 'beige', name: 'Arena', hex: '#DDD3C4', border: '#C6BAA9' },
@@ -308,9 +308,9 @@ export const PRODUCTS: Product[] = [
     price: 89.9,
     description:
       'Denim celeste clásico de tiro alto y pierna recta que estiliza y acompaña todo el día.',
-    images: ['/images/garment-jean-celeste.jpg', '/images/model-look-salida.jpg'],
-    flatLayImage: '/images/garment-jean-celeste.jpg',
-    cutoutImage: '/images/cutouts/jean-celeste.png',
+    images: ['images/garment-jean-celeste.jpg', 'images/model-look-salida.jpg'],
+    flatLayImage: 'images/garment-jean-celeste.jpg',
+    cutoutImage: 'images/cutouts/jean-celeste.png',
     colors: [
       { id: 'denim', name: 'Celeste denim', hex: '#86A5C5' },
       { id: 'azul', name: 'Azul medio', hex: '#4B6B92' },
@@ -346,9 +346,9 @@ export const PRODUCTS: Product[] = [
     price: 89.9,
     description:
       'Falda midi de movimiento fluido con plisado delicado. Combina perfecto con camisas blancas, blusas o blazers.',
-    images: ['/images/garments/mujer-falda-plisada.jpg'],
-    flatLayImage: '/images/garments/mujer-falda-plisada.jpg',
-    cutoutImage: '/images/cutouts/mujer-falda-plisada.png',
+    images: ['images/garments/mujer-falda-plisada.jpg'],
+    flatLayImage: 'images/garments/mujer-falda-plisada.jpg',
+    cutoutImage: 'images/cutouts/mujer-falda-plisada.png',
     colors: [
       { id: 'crema', name: 'Crema arena', hex: '#E6D8C5', border: '#C9B8A3' },
       { id: 'vino', name: 'Borgoña', hex: '#7A2034' },
@@ -385,9 +385,9 @@ export const PRODUCTS: Product[] = [
     price: 139.9,
     description:
       'Casaca denim atemporal con lavado azul medio. La capa exterior perfecta para complementar blusas, faldas o vestidos.',
-    images: ['/images/garments/mujer-casaca-denim.jpg'],
-    flatLayImage: '/images/garments/mujer-casaca-denim.jpg',
-    cutoutImage: '/images/cutouts/mujer-casaca-denim.png',
+    images: ['images/garments/mujer-casaca-denim.jpg'],
+    flatLayImage: 'images/garments/mujer-casaca-denim.jpg',
+    cutoutImage: 'images/cutouts/mujer-casaca-denim.png',
     colors: [
       { id: 'azul-medio', name: 'Azul denim', hex: '#52739A' },
       { id: 'celeste', name: 'Celeste lavado', hex: '#8CA9C7' },
@@ -424,9 +424,9 @@ export const PRODUCTS: Product[] = [
     price: 159.9,
     description:
       'Blazer sastre de corte impecable que eleva al instante cualquier conjunto casual o de oficina.',
-    images: ['/images/garments/mujer-blazer-camel.jpg'],
-    flatLayImage: '/images/garments/mujer-blazer-camel.jpg',
-    cutoutImage: '/images/cutouts/mujer-blazer-camel.png',
+    images: ['images/garments/mujer-blazer-camel.jpg'],
+    flatLayImage: 'images/garments/mujer-blazer-camel.jpg',
+    cutoutImage: 'images/cutouts/mujer-blazer-camel.png',
     colors: [
       { id: 'camel', name: 'Camel arena', hex: '#C7A178' },
       { id: 'negro', name: 'Negro', hex: '#1E2128' },
@@ -466,9 +466,9 @@ export const PRODUCTS: Product[] = [
     price: 49.9,
     description:
       'Blusa fresca y delicada para niña en algodón suave con mangas con vuelo y bordado broderie.',
-    images: ['/images/garments/nina-blusa-broderie.jpg'],
-    flatLayImage: '/images/garments/nina-blusa-broderie.jpg',
-    cutoutImage: '/images/cutouts/nina-blusa-broderie.png',
+    images: ['images/garments/nina-blusa-broderie.jpg'],
+    flatLayImage: 'images/garments/nina-blusa-broderie.jpg',
+    cutoutImage: 'images/cutouts/nina-blusa-broderie.png',
     colors: [
       { id: 'rosa', name: 'Rosa pastel', hex: '#F0BAC4' },
       { id: 'blanco', name: 'Blanco', hex: '#F9F8F6', border: '#D9D7D2' },
@@ -504,9 +504,9 @@ export const PRODUCTS: Product[] = [
     price: 74.9,
     description:
       'Vestido infantil de algodón respirable con microestampado floral y falda amplia para paseos, fiestas y verano.',
-    images: ['/images/garments/nina-vestido-vuelo.jpg'],
-    flatLayImage: '/images/garments/nina-vestido-vuelo.jpg',
-    cutoutImage: '/images/cutouts/nina-vestido-vuelo.png',
+    images: ['images/garments/nina-vestido-vuelo.jpg'],
+    flatLayImage: 'images/garments/nina-vestido-vuelo.jpg',
+    cutoutImage: 'images/cutouts/nina-vestido-vuelo.png',
     colors: [
       { id: 'rosa-floral', name: 'Rosa floral', hex: '#DF909B' },
       { id: 'lavanda', name: 'Lavanda', hex: '#B99FD6' },
@@ -542,9 +542,9 @@ export const PRODUCTS: Product[] = [
     price: 44.9,
     description:
       'Blusa ligera de algodón peruano súper cómoda para combinar con faldas denim o jeans infantiles.',
-    images: ['/images/garment-blusa-celeste.jpg'],
-    flatLayImage: '/images/garment-blusa-celeste.jpg',
-    cutoutImage: '/images/cutouts/blusa-celeste.png',
+    images: ['images/garment-blusa-celeste.jpg'],
+    flatLayImage: 'images/garment-blusa-celeste.jpg',
+    cutoutImage: 'images/cutouts/blusa-celeste.png',
     colors: [
       { id: 'celeste', name: 'Celeste cielo', hex: '#88AED8' },
       { id: 'rosa', name: 'Rosa claro', hex: '#F0BAC4' },
@@ -578,9 +578,9 @@ export const PRODUCTS: Product[] = [
     price: 54.9,
     description:
       'Falda denim liviana con cintura suave elástica y lazo delantero para jugar y pasear con total libertad.',
-    images: ['/images/garments/nina-falda-denim.jpg'],
-    flatLayImage: '/images/garments/nina-falda-denim.jpg',
-    cutoutImage: '/images/cutouts/nina-falda-denim.png',
+    images: ['images/garments/nina-falda-denim.jpg'],
+    flatLayImage: 'images/garments/nina-falda-denim.jpg',
+    cutoutImage: 'images/cutouts/nina-falda-denim.png',
     colors: [
       { id: 'denim', name: 'Celeste denim', hex: '#7FA3C8' },
       { id: 'azul', name: 'Azul medio', hex: '#50729B' },
@@ -616,9 +616,9 @@ export const PRODUCTS: Product[] = [
     price: 52.9,
     description:
       'Pantalón jogger suave en felpa ligera de algodón para deporte, colegio y juegos diarios.',
-    images: ['/images/garments/hombre-jogger-gris.jpg'],
-    flatLayImage: '/images/garments/hombre-jogger-gris.jpg',
-    cutoutImage: '/images/cutouts/hombre-jogger-gris.png',
+    images: ['images/garments/hombre-jogger-gris.jpg'],
+    flatLayImage: 'images/garments/hombre-jogger-gris.jpg',
+    cutoutImage: 'images/cutouts/hombre-jogger-gris.png',
     colors: [
       { id: 'gris', name: 'Gris melange', hex: '#636870' },
       { id: 'rosa-palo', name: 'Rosa palo', hex: '#D9A7B0' },
@@ -653,9 +653,9 @@ export const PRODUCTS: Product[] = [
     price: 89.9,
     description:
       'Casaca denim blanda y confortable, ideal para llevar sobre vestidos florales, blusas broderie o faldas.',
-    images: ['/images/garments/mujer-casaca-denim.jpg'],
-    flatLayImage: '/images/garments/mujer-casaca-denim.jpg',
-    cutoutImage: '/images/cutouts/mujer-casaca-denim.png',
+    images: ['images/garments/mujer-casaca-denim.jpg'],
+    flatLayImage: 'images/garments/mujer-casaca-denim.jpg',
+    cutoutImage: 'images/cutouts/mujer-casaca-denim.png',
     colors: [
       { id: 'azul-denim', name: 'Azul denim', hex: '#52739A' },
       { id: 'celeste', name: 'Celeste suave', hex: '#8CA9C7' },
@@ -693,9 +693,9 @@ export const PRODUCTS: Product[] = [
     price: 89.9,
     description:
       'Camisa manga corta de calce relajado en algodón peruano fresco y resistente a lavados frecuentes.',
-    images: ['/images/garment-camisa-hombre.jpg', '/images/model-hombre-look.jpg'],
-    flatLayImage: '/images/garment-camisa-hombre.jpg',
-    cutoutImage: '/images/cutouts/camisa-hombre.png',
+    images: ['images/garment-camisa-hombre.jpg', 'images/model-hombre-look.jpg'],
+    flatLayImage: 'images/garment-camisa-hombre.jpg',
+    cutoutImage: 'images/cutouts/camisa-hombre.png',
     colors: [
       { id: 'blanco', name: 'Blanco hueso', hex: '#F4F1EA', border: '#D7D2C8' },
       { id: 'celeste', name: 'Celeste', hex: '#8CB4DB' },
@@ -731,9 +731,9 @@ export const PRODUCTS: Product[] = [
     price: 49.9,
     description:
       'Polo esencial en algodón pima peruano de fibra larga, transpirable y suave desde el primer uso.',
-    images: ['/images/garments/hombre-polo-marino.jpg'],
-    flatLayImage: '/images/garments/hombre-polo-marino.jpg',
-    cutoutImage: '/images/cutouts/hombre-polo-marino.png',
+    images: ['images/garments/hombre-polo-marino.jpg'],
+    flatLayImage: 'images/garments/hombre-polo-marino.jpg',
+    cutoutImage: 'images/cutouts/hombre-polo-marino.png',
     colors: [
       { id: 'marino', name: 'Azul marino', hex: '#232F46' },
       { id: 'blanco', name: 'Blanco', hex: '#F6F6F4', border: '#D4D4D4' },
@@ -769,9 +769,9 @@ export const PRODUCTS: Product[] = [
     price: 109.9,
     description:
       'Pantalón chino en gabardina suave con ligero elastano para oficina casual, clases o fin de semana.',
-    images: ['/images/garment-chino-hombre.jpg', '/images/model-hombre-look.jpg'],
-    flatLayImage: '/images/garment-chino-hombre.jpg',
-    cutoutImage: '/images/cutouts/chino-hombre.png',
+    images: ['images/garment-chino-hombre.jpg', 'images/model-hombre-look.jpg'],
+    flatLayImage: 'images/garment-chino-hombre.jpg',
+    cutoutImage: 'images/cutouts/chino-hombre.png',
     colors: [
       { id: 'arena', name: 'Arena khaki', hex: '#CBBBA0' },
       { id: 'negro', name: 'Negro', hex: '#1E2128' },
@@ -808,9 +808,9 @@ export const PRODUCTS: Product[] = [
     price: 119.9,
     description:
       'Pantalón formal de caída limpia para oficina, presentaciones y eventos nocturnos.',
-    images: ['/images/garment-pantalon-negro.jpg'],
-    flatLayImage: '/images/garment-pantalon-negro.jpg',
-    cutoutImage: '/images/cutouts/pantalon-negro.png',
+    images: ['images/garment-pantalon-negro.jpg'],
+    flatLayImage: 'images/garment-pantalon-negro.jpg',
+    cutoutImage: 'images/cutouts/pantalon-negro.png',
     colors: [
       { id: 'negro', name: 'Negro', hex: '#1B1D22' },
       { id: 'marino', name: 'Azul marino', hex: '#24324B' },
@@ -845,9 +845,9 @@ export const PRODUCTS: Product[] = [
     price: 99.9,
     description:
       'Jean versátil de denim resistente con toque de elastano que mantiene su forma durante todo el día.',
-    images: ['/images/garment-jean-celeste.jpg'],
-    flatLayImage: '/images/garment-jean-celeste.jpg',
-    cutoutImage: '/images/cutouts/jean-celeste.png',
+    images: ['images/garment-jean-celeste.jpg'],
+    flatLayImage: 'images/garment-jean-celeste.jpg',
+    cutoutImage: 'images/cutouts/jean-celeste.png',
     colors: [
       { id: 'celeste', name: 'Celeste lavado', hex: '#86A5C5' },
       { id: 'azul-medio', name: 'Azul denim', hex: '#4B6B92' },
@@ -883,9 +883,9 @@ export const PRODUCTS: Product[] = [
     price: 84.9,
     description:
       'Jogger cómodo en felpa francesa de algodón peinado para entrenar, viajar o vestir urbano.',
-    images: ['/images/garments/hombre-jogger-gris.jpg'],
-    flatLayImage: '/images/garments/hombre-jogger-gris.jpg',
-    cutoutImage: '/images/cutouts/hombre-jogger-gris.png',
+    images: ['images/garments/hombre-jogger-gris.jpg'],
+    flatLayImage: 'images/garments/hombre-jogger-gris.jpg',
+    cutoutImage: 'images/cutouts/hombre-jogger-gris.png',
     colors: [
       { id: 'gris', name: 'Gris carbón', hex: '#555A64' },
       { id: 'negro', name: 'Negro', hex: '#1E2128' },
@@ -921,9 +921,9 @@ export const PRODUCTS: Product[] = [
     price: 159.9,
     description:
       'Chaqueta bomber urbana resistente al viento con puños y basta tejidos. Ideal para combinar con polos pima, jeans o joggers.',
-    images: ['/images/garments/hombre-bomber-olivo.jpg'],
-    flatLayImage: '/images/garments/hombre-bomber-olivo.jpg',
-    cutoutImage: '/images/cutouts/hombre-bomber-olivo.png',
+    images: ['images/garments/hombre-bomber-olivo.jpg'],
+    flatLayImage: 'images/garments/hombre-bomber-olivo.jpg',
+    cutoutImage: 'images/cutouts/hombre-bomber-olivo.png',
     colors: [
       { id: 'olivo', name: 'Verde olivo', hex: '#525C3E' },
       { id: 'negro', name: 'Negro', hex: '#1F2229' },
@@ -962,9 +962,9 @@ export const PRODUCTS: Product[] = [
     price: 39.9,
     description:
       'Polo infantil hipoalergénico de algodón pima peruano con rayas clásicas, suave y resistente para jugar todo el día.',
-    images: ['/images/garments/nino-polo-rayas.jpg', '/images/model-ninos-look.jpg'],
-    flatLayImage: '/images/garments/nino-polo-rayas.jpg',
-    cutoutImage: '/images/cutouts/nino-polo-rayas.png',
+    images: ['images/garments/nino-polo-rayas.jpg', 'images/model-ninos-look.jpg'],
+    flatLayImage: 'images/garments/nino-polo-rayas.jpg',
+    cutoutImage: 'images/cutouts/nino-polo-rayas.png',
     colors: [
       { id: 'rayas-rojo', name: 'Rayas rojo/marino', hex: '#C8102E' },
       { id: 'rayas-celeste', name: 'Rayas celeste', hex: '#7DA9D8' },
@@ -999,9 +999,9 @@ export const PRODUCTS: Product[] = [
     price: 54.9,
     description:
       'Camisa infantil ligera en algodón 100% con cuadros azul marino y celeste. Ideal para paseos y reuniones familiares.',
-    images: ['/images/garments/nino-camisa-cuadros.jpg'],
-    flatLayImage: '/images/garments/nino-camisa-cuadros.jpg',
-    cutoutImage: '/images/cutouts/nino-camisa-cuadros.png',
+    images: ['images/garments/nino-camisa-cuadros.jpg'],
+    flatLayImage: 'images/garments/nino-camisa-cuadros.jpg',
+    cutoutImage: 'images/cutouts/nino-camisa-cuadros.png',
     colors: [
       { id: 'cuadros-azul', name: 'Cuadros celeste', hex: '#4B79B0' },
       { id: 'blanco', name: 'Blanco', hex: '#F4F1EA', border: '#D7D2C8' },
@@ -1036,9 +1036,9 @@ export const PRODUCTS: Product[] = [
     price: 34.9,
     description:
       'Polo versátil azul marino de algodón pima peruano, ideal para el colegio, deporte o uso diario.',
-    images: ['/images/garments/hombre-polo-marino.jpg'],
-    flatLayImage: '/images/garments/hombre-polo-marino.jpg',
-    cutoutImage: '/images/cutouts/hombre-polo-marino.png',
+    images: ['images/garments/hombre-polo-marino.jpg'],
+    flatLayImage: 'images/garments/hombre-polo-marino.jpg',
+    cutoutImage: 'images/cutouts/hombre-polo-marino.png',
     colors: [
       { id: 'marino', name: 'Azul marino', hex: '#232F46' },
       { id: 'gris', name: 'Gris', hex: '#8E939B' },
@@ -1072,9 +1072,9 @@ export const PRODUCTS: Product[] = [
     price: 44.9,
     description:
       'Short infantil fresco en gabardina de algodón con pretina elástica regulable, ideal para verano y parque.',
-    images: ['/images/garments/nino-short-chino.jpg'],
-    flatLayImage: '/images/garments/nino-short-chino.jpg',
-    cutoutImage: '/images/cutouts/nino-short-chino.png',
+    images: ['images/garments/nino-short-chino.jpg'],
+    flatLayImage: 'images/garments/nino-short-chino.jpg',
+    cutoutImage: 'images/cutouts/nino-short-chino.png',
     colors: [
       { id: 'arena', name: 'Arena khaki', hex: '#CFC0A6' },
       { id: 'marino', name: 'Azul marino', hex: '#2C3F5E' },
@@ -1108,9 +1108,9 @@ export const PRODUCTS: Product[] = [
     price: 59.9,
     description:
       'Jean infantil flexible con cintura regulable interna para acompañar el crecimiento y movimiento diario.',
-    images: ['/images/garment-jean-celeste.jpg'],
-    flatLayImage: '/images/garment-jean-celeste.jpg',
-    cutoutImage: '/images/cutouts/jean-celeste.png',
+    images: ['images/garment-jean-celeste.jpg'],
+    flatLayImage: 'images/garment-jean-celeste.jpg',
+    cutoutImage: 'images/cutouts/jean-celeste.png',
     colors: [
       { id: 'denim', name: 'Celeste denim', hex: '#86A5C5' },
       { id: 'azul', name: 'Azul clásico', hex: '#4B6B92' },
@@ -1146,9 +1146,9 @@ export const PRODUCTS: Product[] = [
     price: 49.9,
     description:
       'Jogger deportivo infantil para jugar, correr o disfrutar tardes frescas con máxima comodidad.',
-    images: ['/images/garments/hombre-jogger-gris.jpg'],
-    flatLayImage: '/images/garments/hombre-jogger-gris.jpg',
-    cutoutImage: '/images/cutouts/hombre-jogger-gris.png',
+    images: ['images/garments/hombre-jogger-gris.jpg'],
+    flatLayImage: 'images/garments/hombre-jogger-gris.jpg',
+    cutoutImage: 'images/cutouts/hombre-jogger-gris.png',
     colors: [
       { id: 'gris', name: 'Gris carbón', hex: '#555A64' },
       { id: 'marino', name: 'Azul marino', hex: '#283652' },
@@ -1183,9 +1183,9 @@ export const PRODUCTS: Product[] = [
     price: 89.9,
     description:
       'Casaca liviana estilo bomber para niño, perfecta para abrigar sin restar libertad al jugar.',
-    images: ['/images/garments/hombre-bomber-olivo.jpg'],
-    flatLayImage: '/images/garments/hombre-bomber-olivo.jpg',
-    cutoutImage: '/images/cutouts/hombre-bomber-olivo.png',
+    images: ['images/garments/hombre-bomber-olivo.jpg'],
+    flatLayImage: 'images/garments/hombre-bomber-olivo.jpg',
+    cutoutImage: 'images/cutouts/hombre-bomber-olivo.png',
     colors: [
       { id: 'olivo', name: 'Verde olivo', hex: '#525C3E' },
       { id: 'marino', name: 'Azul marino', hex: '#283652' },

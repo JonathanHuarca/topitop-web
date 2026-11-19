@@ -121,7 +121,7 @@ export const CalidadPage: React.FC<CalidadPageProps> = ({
                     <div className="sm:col-span-5">
                       <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-[#F4F1EE] border border-neutral-100">
                         <img
-                          src="/images/hero-model-blusa.jpg"
+                          src="images/hero-model-blusa.jpg"
                           alt="Blusa manga abullonada Topitop"
                           className="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
                         />
@@ -279,17 +279,17 @@ export const CalidadPage: React.FC<CalidadPageProps> = ({
             <div className="lg:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-4">
               {[
                 {
-                  img: '/images/instore-tag-qr.jpg',
+                  img: 'images/instore-tag-qr.jpg',
                   title: 'Etiqueta con QR',
                   desc: 'Vinculado a la ficha de cada SKU',
                 },
                 {
-                  img: '/images/instore-probador-qr.jpg',
+                  img: 'images/instore-probador-qr.jpg',
                   title: 'QR en probador',
                   desc: 'Revisa tela, origen y cuidados',
                 },
                 {
-                  img: '/images/instore-asesor-tablet.jpg',
+                  img: 'images/instore-asesor-tablet.jpg',
                   title: 'Tablet del asesor',
                   desc: 'Consulta asistida al instante',
                 },
@@ -356,25 +356,25 @@ export const CalidadPage: React.FC<CalidadPageProps> = ({
               label: 'Mujer',
               sub: 'Blusas, vestidos, faldas, pantalones y blazers',
               target: { name: 'combina', category: 'mujer' } as PageRoute,
-              image: '/images/model-look-universidad.jpg',
+              image: 'images/model-look-universidad.jpg',
             },
             {
               label: 'Niña',
               sub: 'Vestidos, faldas denim, blusas y casacas',
               target: { name: 'combina', category: 'nina' } as PageRoute,
-              image: '/images/models/nina-oscura-afro.jpg',
+              image: 'images/models/nina-oscura-afro.jpg',
             },
             {
               label: 'Hombre',
               sub: 'Camisas, polos, chinos, jeans y bomber',
               target: { name: 'combina', category: 'hombre' } as PageRoute,
-              image: '/images/model-hombre-look.jpg',
+              image: 'images/model-hombre-look.jpg',
             },
             {
               label: 'Niño',
               sub: 'Polos, camisas, shorts, jeans y casacas',
               target: { name: 'combina', category: 'nino' } as PageRoute,
-              image: '/images/model-nino-full.jpg',
+              image: 'images/model-nino-full.jpg',
             },
           ].map((card) => (
             <div

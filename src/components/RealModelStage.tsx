@@ -144,21 +144,47 @@ export function getExactPhotographedLook(
     }
   }
 
-  /* NIÑO (2 looks reales de estudio en modelo solo) */
+  /* NIÑO (10 looks reales de estudio en modelo — 100% combinaciones base + bomber curado) */
   if (category === 'nino') {
-    if (
-      !outId &&
-      topProductId === 'polo-rayas-ninos' &&
-      bottomProductId === 'short-chino-nino'
-    ) {
-      return 'images/looks/nino-parque.jpg';
+    if (!outId && topProductId === 'polo-rayas-ninos') {
+      if (bottomProductId === 'short-chino-nino') {
+        return 'images/looks/nino-parque.jpg';
+      }
+      if (bottomProductId === 'jean-comodo-ninos') {
+        return 'images/looks/nino-rayas-jean.jpg';
+      }
+      if (bottomProductId === 'jogger-deportivo-nino') {
+        return 'images/looks/nino-rayas-jogger.jpg';
+      }
+    }
+    if (!outId && topProductId === 'camisa-cuadros-nino') {
+      if (bottomProductId === 'short-chino-nino') {
+        return 'images/looks/nino-cuadros-short.jpg';
+      }
+      if (bottomProductId === 'jean-comodo-ninos') {
+        return 'images/looks/nino-cuadros.jpg';
+      }
+      if (bottomProductId === 'jogger-deportivo-nino') {
+        return 'images/looks/nino-cuadros-jogger.jpg';
+      }
+    }
+    if (!outId && topProductId === 'polo-marino-nino') {
+      if (bottomProductId === 'short-chino-nino') {
+        return 'images/looks/nino-marino-short.jpg';
+      }
+      if (bottomProductId === 'jean-comodo-ninos') {
+        return 'images/looks/nino-marino-jean.jpg';
+      }
+      if (bottomProductId === 'jogger-deportivo-nino') {
+        return 'images/looks/nino-deportivo.jpg';
+      }
     }
     if (
-      !outId &&
-      topProductId === 'camisa-cuadros-nino' &&
-      bottomProductId === 'jean-comodo-ninos'
+      topProductId === 'polo-rayas-ninos' &&
+      bottomProductId === 'jean-comodo-ninos' &&
+      outId === 'casaca-bomber-nino'
     ) {
-      return 'images/looks/nino-cuadros.jpg';
+      return 'images/looks/nino-bomber.jpg';
     }
   }
 

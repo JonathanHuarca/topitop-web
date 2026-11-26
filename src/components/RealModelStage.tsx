@@ -13,9 +13,9 @@ const CATEGORY_LABEL: Record<CategoryId, string> = {
 
 const CATEGORY_AVATAR: Record<CategoryId, string> = {
   mujer: 'images/hero-model-blusa.jpg',
-  nina: 'images/models/nina-oscura-afro.jpg',
+  nina: 'images/looks/nina-broderie.jpg',
   hombre: 'images/model-hombre-look.jpg',
-  nino: 'images/model-ninos-look.jpg',
+  nino: 'images/looks/nino-parque.jpg',
 };
 
 /**
@@ -26,36 +26,124 @@ export function getExactPhotographedLook(
   category: CategoryId,
   topProductId?: string,
   bottomProductId?: string,
-  hasOuterwear?: boolean
+  outerwearProductId?: string | null
 ): string | null {
-  if (hasOuterwear) return null;
+  const outId = outerwearProductId || null;
 
-  if (category === 'mujer' && topProductId === 'blusa-manga-abullonada') {
-    if (bottomProductId === 'pantalon-wide-leg') {
-      return 'images/model-look-universidad.jpg';
+  /* MUJER (6 looks reales de estudio en modelo) */
+  if (category === 'mujer') {
+    if (!outId && topProductId === 'blusa-manga-abullonada') {
+      if (bottomProductId === 'pantalon-wide-leg') {
+        return 'images/model-look-universidad.jpg';
+      }
+      if (bottomProductId === 'pantalon-sastre-negro') {
+        return 'images/model-look-trabajo.jpg';
+      }
+      if (bottomProductId === 'jean-straight-celeste') {
+        return 'images/model-look-salida.jpg';
+      }
     }
-    if (bottomProductId === 'pantalon-sastre-negro') {
-      return 'images/model-look-trabajo.jpg';
+    if (
+      topProductId === 'camisa-lino-mujer' &&
+      bottomProductId === 'pantalon-sastre-negro' &&
+      outId === 'blazer-estructurado-mujer'
+    ) {
+      return 'images/looks/mujer-ejecutivo.jpg';
     }
-    if (bottomProductId === 'jean-straight-celeste') {
-      return 'images/model-look-salida.jpg';
+    if (
+      topProductId === 'vestido-midi-camisero' &&
+      outId === 'casaca-denim-mujer'
+    ) {
+      return 'images/looks/mujer-vestido.jpg';
+    }
+    if (
+      !outId &&
+      topProductId === 'camisa-lino-mujer' &&
+      bottomProductId === 'falda-midi-plisada'
+    ) {
+      return 'images/looks/mujer-falda.jpg';
     }
   }
 
-  if (
-    category === 'hombre' &&
-    topProductId === 'camisa-casual-algodon' &&
-    bottomProductId === 'pantalon-chino-hombre'
-  ) {
-    return 'images/model-hombre-look.jpg';
+  /* HOMBRE (4 looks reales de estudio en modelo — 100% de los looks curados) */
+  if (category === 'hombre') {
+    if (
+      !outId &&
+      topProductId === 'camisa-casual-algodon' &&
+      bottomProductId === 'pantalon-chino-hombre'
+    ) {
+      return 'images/model-hombre-look.jpg';
+    }
+    if (
+      topProductId === 'polo-pima-hombre' &&
+      bottomProductId === 'jean-straight-hombre' &&
+      outId === 'chaqueta-bomber-hombre'
+    ) {
+      return 'images/looks/hombre-bomber.jpg';
+    }
+    if (
+      !outId &&
+      topProductId === 'camisa-casual-algodon' &&
+      bottomProductId === 'pantalon-sastre-hombre'
+    ) {
+      return 'images/looks/hombre-formal.jpg';
+    }
+    if (
+      !outId &&
+      topProductId === 'polo-pima-hombre' &&
+      bottomProductId === 'jogger-deportivo-hombre'
+    ) {
+      return 'images/looks/hombre-deportivo.jpg';
+    }
   }
 
-  if (
-    category === 'nino' &&
-    topProductId === 'polo-rayas-ninos' &&
-    bottomProductId === 'short-chino-nino'
-  ) {
-    return 'images/model-nino-full.jpg';
+  /* NIÑA (4 looks reales de estudio en modelo — 100% de los looks curados) */
+  if (category === 'nina') {
+    if (
+      !outId &&
+      topProductId === 'blusa-broderie-nina' &&
+      bottomProductId === 'falda-denim-nina'
+    ) {
+      return 'images/looks/nina-broderie.jpg';
+    }
+    if (
+      topProductId === 'vestido-vuelo-nina' &&
+      outId === 'casaca-denim-nina'
+    ) {
+      return 'images/looks/nina-vestido.jpg';
+    }
+    if (
+      !outId &&
+      topProductId === 'blusa-celeste-nina' &&
+      bottomProductId === 'falda-denim-nina'
+    ) {
+      return 'images/looks/nina-celeste.jpg';
+    }
+    if (
+      !outId &&
+      topProductId === 'blusa-broderie-nina' &&
+      bottomProductId === 'jogger-suave-nina'
+    ) {
+      return 'images/looks/nina-deportivo.jpg';
+    }
+  }
+
+  /* NIÑO (2 looks reales de estudio en modelo solo) */
+  if (category === 'nino') {
+    if (
+      !outId &&
+      topProductId === 'polo-rayas-ninos' &&
+      bottomProductId === 'short-chino-nino'
+    ) {
+      return 'images/looks/nino-parque.jpg';
+    }
+    if (
+      !outId &&
+      topProductId === 'camisa-cuadros-nino' &&
+      bottomProductId === 'jean-comodo-ninos'
+    ) {
+      return 'images/looks/nino-cuadros.jpg';
+    }
   }
 
   return null;
@@ -68,13 +156,13 @@ export function getCategoryModelPhoto(
   category: CategoryId,
   topProductId?: string,
   bottomProductId?: string,
-  hasOuterwear?: boolean
+  outerwearProductId?: string | null
 ): string {
   const exact = getExactPhotographedLook(
     category,
     topProductId,
     bottomProductId,
-    hasOuterwear
+    outerwearProductId
   );
   if (exact) return exact;
   return CATEGORY_AVATAR[category];
@@ -103,14 +191,13 @@ export const RealModelStage: React.FC<RealModelStageProps> = ({
   outerwearProduct,
   pieces,
 }) => {
-  const hasOuterwear = Boolean(outerwearProduct);
   const isDress = topProduct.slot === 'dress';
 
   const exactModelPhoto = getExactPhotographedLook(
     category,
     topProduct.id,
     bottomProduct?.id,
-    hasOuterwear
+    outerwearProduct?.id ?? null
   );
 
   // When an exact real photoshoot exists for this combination, show it by default;
@@ -165,21 +252,7 @@ export const RealModelStage: React.FC<RealModelStageProps> = ({
             key={exactModelPhoto}
             src={exactModelPhoto}
             alt={`Modelo ${CATEGORY_LABEL[category]} luciendo ${lookTitle}`}
-            className={`w-full h-full ${
-              category === 'nino'
-                ? 'object-contain object-top'
-                : 'object-cover object-top'
-            } animate-fade-up`}
-            style={
-              category === 'nino'
-                ? {
-                    WebkitMaskImage:
-                      'linear-gradient(to right, transparent 14%, black 28%, black 72%, transparent 86%)',
-                    maskImage:
-                      'linear-gradient(to right, transparent 14%, black 28%, black 72%, transparent 86%)',
-                  }
-                : undefined
-            }
+            className="w-full h-full object-cover object-top animate-fade-up"
           />
         ) : (
           /* EDITORIAL STUDIO FLAT-LAY OUTFIT COMPOSITION (NO STICKERS ON BODY!) */

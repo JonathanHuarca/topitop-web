@@ -962,7 +962,7 @@ export const PRODUCTS: Product[] = [
     price: 39.9,
     description:
       'Polo infantil hipoalergénico de algodón pima peruano con rayas clásicas, suave y resistente para jugar todo el día.',
-    images: ['images/garments/nino-polo-rayas.jpg', 'images/model-ninos-look.jpg'],
+    images: ['images/garments/nino-polo-rayas.jpg', 'images/looks/nino-parque.jpg'],
     flatLayImage: 'images/garments/nino-polo-rayas.jpg',
     cutoutImage: 'images/cutouts/nino-polo-rayas.png',
     colors: [
@@ -1210,7 +1210,7 @@ export const PRODUCTS: Product[] = [
 ];
 
 export const LOOKS: Look[] = [
-  /* MUJER (4 curated looks) */
+  /* MUJER (5 curated looks — todos con foto real de estudio en modelo) */
   {
     id: 'look-universidad',
     title: 'Look universidad',
@@ -1241,7 +1241,6 @@ export const LOOKS: Look[] = [
     style: 'Casual',
     topProductId: 'blusa-manga-abullonada',
     bottomProductId: 'jean-straight-celeste',
-    outerwearProductId: 'casaca-denim-mujer',
     discountPercent: 10,
   },
   {
@@ -1255,8 +1254,18 @@ export const LOOKS: Look[] = [
     discountPercent: 10,
     featuredLabel: 'Nuevo',
   },
+  {
+    id: 'look-mujer-falda',
+    title: 'Look lino y falda plisada',
+    category: 'mujer',
+    occasion: 'Trabajo',
+    style: 'Formal',
+    topProductId: 'camisa-lino-mujer',
+    bottomProductId: 'falda-midi-plisada',
+    discountPercent: 10,
+  },
 
-  /* NIÑA (4 curated kids looks) */
+  /* NIÑA (4 curated kids looks — todos con foto real de estudio en modelo) */
   {
     id: 'look-nina-broderie',
     title: 'Look broderie y falda denim',
@@ -1281,13 +1290,12 @@ export const LOOKS: Look[] = [
   },
   {
     id: 'look-nina-celeste',
-    title: 'Look celeste y denim',
+    title: 'Look blusa celeste y falda denim',
     category: 'nina',
     occasion: 'Casual',
     style: 'Casual',
     topProductId: 'blusa-celeste-nina',
     bottomProductId: 'falda-denim-nina',
-    outerwearProductId: 'casaca-denim-nina',
     discountPercent: 10,
   },
   {

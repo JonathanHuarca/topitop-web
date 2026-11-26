@@ -275,8 +275,8 @@ export const CombinaLookPage: React.FC<CombinaLookPageProps> = ({
   const activePhotoSrc = getCategoryModelPhoto(
     category,
     topProduct.id,
-    bottomProduct.id,
-    Boolean(outerwearProduct)
+    isDressMode ? undefined : bottomProduct.id,
+    outerwearProduct?.id ?? null
   );
 
   const cycleTop = (dir: 1 | -1) => {
@@ -726,7 +726,11 @@ export const CombinaLookPage: React.FC<CombinaLookPageProps> = ({
               ? getProductById(look.outerwearProductId)
               : null;
             const secondary = bottom ?? outer;
-            const pieces = [top, ...(secondary ? [secondary] : [])];
+            const pieces = [
+              top,
+              ...(bottom ? [bottom] : []),
+              ...(outer ? [outer] : []),
+            ];
             const lookPrice = computeLookPrice(
               pieces.map((p) => p.price),
               look.discountPercent
@@ -735,13 +739,17 @@ export const CombinaLookPage: React.FC<CombinaLookPageProps> = ({
               look.category,
               look.topProductId,
               look.bottomProductId,
-              Boolean(look.outerwearProductId)
+              look.outerwearProductId ?? null
             );
 
             return (
               <div
                 key={look.id}
                 onClick={() => {
+                  const idx = filteredLooks.findIndex((l) => l.id === look.id);
+                  if (idx >= 0) {
+                    setLookIndex(idx);
+                  }
                   setTopProductId(look.topProductId);
                   if (look.bottomProductId) {
                     setBottomProductId(look.bottomProductId);
@@ -753,6 +761,10 @@ export const CombinaLookPage: React.FC<CombinaLookPageProps> = ({
                 tabIndex={0}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
+                    const idx = filteredLooks.findIndex((l) => l.id === look.id);
+                    if (idx >= 0) {
+                      setLookIndex(idx);
+                    }
                     setTopProductId(look.topProductId);
                     if (look.bottomProductId) {
                       setBottomProductId(look.bottomProductId);

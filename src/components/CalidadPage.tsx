@@ -362,7 +362,7 @@ export const CalidadPage: React.FC<CalidadPageProps> = ({
               label: 'Niña',
               sub: 'Vestidos, faldas denim, blusas y casacas',
               target: { name: 'combina', category: 'nina' } as PageRoute,
-              image: 'images/models/nina-oscura-afro.jpg',
+              image: 'images/looks/nina-broderie.jpg',
             },
             {
               label: 'Hombre',
@@ -374,7 +374,7 @@ export const CalidadPage: React.FC<CalidadPageProps> = ({
               label: 'Niño',
               sub: 'Polos, camisas, shorts, jeans y casacas',
               target: { name: 'combina', category: 'nino' } as PageRoute,
-              image: 'images/model-nino-full.jpg',
+              image: 'images/looks/nino-parque.jpg',
             },
           ].map((card) => (
             <div
@@ -424,7 +424,7 @@ export const CalidadPage: React.FC<CalidadPageProps> = ({
           </span>
           <span className="inline-flex items-center gap-2 font-medium text-[#141923]">
             <Smartphone className="w-4 h-4 text-[#C8102E]" />
-            Personalización inclusiva en todos los perfiles
+            Looks combinables para Mujer, Niña, Hombre y Niño
           </span>
         </div>
       </section>

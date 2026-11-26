@@ -573,7 +573,7 @@ export const CombinaLookPage: React.FC<CombinaLookPageProps> = ({
           </div>
 
           {/* Outerwear Layer Quick Toggle */}
-          {outerwearCandidates.length > 0 && !isDressMode && (
+          {outerwearCandidates.length > 0 && (
             <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
               <button
                 type="button"

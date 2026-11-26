@@ -30,7 +30,7 @@ export function getExactPhotographedLook(
 ): string | null {
   const outId = outerwearProductId || null;
 
-  /* MUJER (6 looks reales de estudio en modelo) */
+  /* MUJER (11 looks reales de estudio en modelo — 100% combinaciones base + capas curadas) */
   if (category === 'mujer') {
     if (!outId && topProductId === 'blusa-manga-abullonada') {
       if (bottomProductId === 'pantalon-wide-leg') {
@@ -42,6 +42,23 @@ export function getExactPhotographedLook(
       if (bottomProductId === 'jean-straight-celeste') {
         return 'images/model-look-salida.jpg';
       }
+      if (bottomProductId === 'falda-midi-plisada') {
+        return 'images/looks/mujer-blusa-falda.jpg';
+      }
+    }
+    if (!outId && topProductId === 'camisa-lino-mujer') {
+      if (bottomProductId === 'pantalon-wide-leg') {
+        return 'images/looks/mujer-camisa-wideleg.jpg';
+      }
+      if (bottomProductId === 'pantalon-sastre-negro') {
+        return 'images/looks/mujer-camisa-sastre.jpg';
+      }
+      if (bottomProductId === 'jean-straight-celeste') {
+        return 'images/looks/mujer-camisa-jean.jpg';
+      }
+      if (bottomProductId === 'falda-midi-plisada') {
+        return 'images/looks/mujer-falda.jpg';
+      }
     }
     if (
       topProductId === 'camisa-lino-mujer' &&
@@ -50,29 +67,45 @@ export function getExactPhotographedLook(
     ) {
       return 'images/looks/mujer-ejecutivo.jpg';
     }
-    if (
-      topProductId === 'vestido-midi-camisero' &&
-      outId === 'casaca-denim-mujer'
-    ) {
-      return 'images/looks/mujer-vestido.jpg';
-    }
-    if (
-      !outId &&
-      topProductId === 'camisa-lino-mujer' &&
-      bottomProductId === 'falda-midi-plisada'
-    ) {
-      return 'images/looks/mujer-falda.jpg';
+    if (topProductId === 'vestido-midi-camisero') {
+      if (outId === 'casaca-denim-mujer') {
+        return 'images/looks/mujer-vestido.jpg';
+      }
+      if (!outId) {
+        return 'images/looks/mujer-vestido-solo.jpg';
+      }
     }
   }
 
-  /* HOMBRE (4 looks reales de estudio en modelo — 100% de los looks curados) */
+  /* HOMBRE (9 looks reales de estudio en modelo — 100% combinaciones base + bomber curado) */
   if (category === 'hombre') {
-    if (
-      !outId &&
-      topProductId === 'camisa-casual-algodon' &&
-      bottomProductId === 'pantalon-chino-hombre'
-    ) {
-      return 'images/model-hombre-look.jpg';
+    if (!outId && topProductId === 'camisa-casual-algodon') {
+      if (bottomProductId === 'pantalon-chino-hombre') {
+        return 'images/model-hombre-look.jpg';
+      }
+      if (bottomProductId === 'pantalon-sastre-hombre') {
+        return 'images/looks/hombre-formal.jpg';
+      }
+      if (bottomProductId === 'jean-straight-hombre') {
+        return 'images/looks/hombre-camisa-jean.jpg';
+      }
+      if (bottomProductId === 'jogger-deportivo-hombre') {
+        return 'images/looks/hombre-camisa-jogger.jpg';
+      }
+    }
+    if (!outId && topProductId === 'polo-pima-hombre') {
+      if (bottomProductId === 'pantalon-chino-hombre') {
+        return 'images/looks/hombre-polo-chino.jpg';
+      }
+      if (bottomProductId === 'pantalon-sastre-hombre') {
+        return 'images/looks/hombre-polo-sastre.jpg';
+      }
+      if (bottomProductId === 'jean-straight-hombre') {
+        return 'images/looks/hombre-polo-jean.jpg';
+      }
+      if (bottomProductId === 'jogger-deportivo-hombre') {
+        return 'images/looks/hombre-deportivo.jpg';
+      }
     }
     if (
       topProductId === 'polo-pima-hombre' &&
@@ -81,50 +114,33 @@ export function getExactPhotographedLook(
     ) {
       return 'images/looks/hombre-bomber.jpg';
     }
-    if (
-      !outId &&
-      topProductId === 'camisa-casual-algodon' &&
-      bottomProductId === 'pantalon-sastre-hombre'
-    ) {
-      return 'images/looks/hombre-formal.jpg';
-    }
-    if (
-      !outId &&
-      topProductId === 'polo-pima-hombre' &&
-      bottomProductId === 'jogger-deportivo-hombre'
-    ) {
-      return 'images/looks/hombre-deportivo.jpg';
-    }
   }
 
-  /* NIÑA (4 looks reales de estudio en modelo — 100% de los looks curados) */
+  /* NIÑA (6 looks reales de estudio en modelo — 100% combinaciones base + casaca denim curada) */
   if (category === 'nina') {
-    if (
-      !outId &&
-      topProductId === 'blusa-broderie-nina' &&
-      bottomProductId === 'falda-denim-nina'
-    ) {
-      return 'images/looks/nina-broderie.jpg';
+    if (!outId && topProductId === 'blusa-broderie-nina') {
+      if (bottomProductId === 'falda-denim-nina') {
+        return 'images/looks/nina-broderie.jpg';
+      }
+      if (bottomProductId === 'jogger-suave-nina') {
+        return 'images/looks/nina-deportivo.jpg';
+      }
     }
-    if (
-      topProductId === 'vestido-vuelo-nina' &&
-      outId === 'casaca-denim-nina'
-    ) {
-      return 'images/looks/nina-vestido.jpg';
+    if (!outId && topProductId === 'blusa-celeste-nina') {
+      if (bottomProductId === 'falda-denim-nina') {
+        return 'images/looks/nina-celeste.jpg';
+      }
+      if (bottomProductId === 'jogger-suave-nina') {
+        return 'images/looks/nina-celeste-jogger.jpg';
+      }
     }
-    if (
-      !outId &&
-      topProductId === 'blusa-celeste-nina' &&
-      bottomProductId === 'falda-denim-nina'
-    ) {
-      return 'images/looks/nina-celeste.jpg';
-    }
-    if (
-      !outId &&
-      topProductId === 'blusa-broderie-nina' &&
-      bottomProductId === 'jogger-suave-nina'
-    ) {
-      return 'images/looks/nina-deportivo.jpg';
+    if (topProductId === 'vestido-vuelo-nina') {
+      if (outId === 'casaca-denim-nina') {
+        return 'images/looks/nina-vestido.jpg';
+      }
+      if (!outId) {
+        return 'images/looks/nina-vestido-solo.jpg';
+      }
     }
   }
 
